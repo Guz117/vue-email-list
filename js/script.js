@@ -16,12 +16,12 @@ const app = new Vue({
             axios
             .get('https://flynn.boolean.careers/exercises/api/random/mail')
             .then((response) => {
-            this.email = response.data.response;
-            console.log(this.email)
+                this.email = response.data.response;
+                onsole.log(this.email)
                 this.mails.push(this.email)
             })
             .catch((error) => {
-            console.log(error);
+                console.log(error);
             })
             
             
@@ -31,8 +31,3 @@ const app = new Vue({
     
 })
 
-// while (this.mails.length < 10 ) {
-//     let element =  response.data.response; 
-//     if (!this.mails.includes(element))  
-//     this.mails.push(element)
-// }

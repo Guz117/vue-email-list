@@ -10,8 +10,8 @@
 </head>
 <body>
     <div id="app">
-        <ul v-for="mail in mails">
-            <li>{{ mail }}</li>
+        <ul v-if="mails.length == 10">
+            <li v-for="mail in mails">{{ mail }}</li>
         </ul>
       </div>
     <script src="js/script.js"></script>

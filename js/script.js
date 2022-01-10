@@ -18,8 +18,8 @@ const app = new Vue({
             .then((response) => {
             this.email = response.data.response;
             console.log(this.email)
-            this.mails.push(this.email)
-        })
+                this.mails.push(this.email)
+            })
             .catch((error) => {
             console.log(error);
             })
